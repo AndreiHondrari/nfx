@@ -1,0 +1,38 @@
+
+body {
+    font-family: 'Crimson Text', serif;
+}
+
+.p-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 25%;
+}
+
+p {
+    font-size: 35px;
+    text-align: center;
+}
+
+.nfx-reveal-chars {
+    opacity: 0;
+}
+
+.nfx-reveal-chars.nfx-initialized {
+    opacity: 1;
+}
+
+.nfx-reveal-chars .nfx-char {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.nfx-reveal-chars .nfx-hidden-char {
+    opacity: 0;
+}
